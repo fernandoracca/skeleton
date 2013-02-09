@@ -15,8 +15,9 @@ Use
 ---------------
 Clone and update the project name from build.sbt
 
-    git clone git://github.com/fractal/sst my-project
+    git clone git://github.com/fractal/skeleton my-project
     cd my-project
+    rm -rf .git
     vi build-sbt # change name to my-project
     sbt
     test
