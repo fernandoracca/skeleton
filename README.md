@@ -18,7 +18,7 @@ Clone and update the project name from build.sbt
     git clone git://github.com/fractal/skeleton my-project
     cd my-project
     rm -rf .git
-    vi build-sbt # change name to my-project
+    vi build-sbt # change name to my-project, and organization to something that suits you
     sbt
     test
     gen-idea

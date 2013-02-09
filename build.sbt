@@ -1,4 +1,4 @@
-name := "sst"
+name := "skeleton"
 
 organization := "uk.co.fluidlabs"
 
