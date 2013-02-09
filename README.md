@@ -1,7 +1,7 @@
-First Scala Step
+Skeleton
 ------------
 
-This project aims to simplify creating a project from scratch.It's easier than g8 because it doesn't require any additional tools, just clone, build and run.
+This project aims to simplify creating a project from scratch.It's simpler than g8 because it doesn't require any additional tools, just clone, build and run.
 It provides:
 
      Scala 2.10.0
