@@ -4,12 +4,11 @@ Skeleton
 This project aims to simplify creating a project from scratch.It's simpler than g8 because it doesn't require any additional tools, just clone, build and run.
 It provides:
 
-     Scala 2.10.0
+     Scala 2.10.1
      SBT 0.12.2
      ScalaTest 2.0M5b2
      IntelliJ IDEA
-     Scala-IDE 2.0+
-     [SBT-man](https://github.com/sbt/sbt-man) - Extremely handy Scaladoc info from your shell! 
+     Scala-IDE 3.0
 
 Use
 ---------------
@@ -31,6 +30,5 @@ Requires
 Recommends
 ---------------
 * Latest IDEA 12+ and Scala and SBT plugin.
-* Latest [Scala IDE 2.1 M3+](http://scala-ide.org/download/milestone.html). Works great out of the box. 
+* Latest [Scala IDE 3](http://scala-ide.org/download/). Works great out of the box and offers ScalaTest integration  
 * Read [sbt eclipse](https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse) for more details.
-* Scala Tests require ScalaTest 2.0 plugin plugin in Eclipse. Make sure you install when downloading the scala plugin as optional. 
