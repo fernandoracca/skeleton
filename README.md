@@ -5,7 +5,7 @@ This project aims to simplify creating a project from scratch.It's simpler than 
 It provides:
 
      Scala 2.10.1
-     SBT 0.12.2
+     SBT 0.12.3
      ScalaTest 2.0M5b2
      IntelliJ IDEA
      Scala-IDE 3.0
@@ -25,7 +25,7 @@ Clone and update the project name from build.sbt
 
 Requires
 ---------------
-* [sbt 0.12.2](https://scala-sbt.org]
+* [sbt 0.12.3](https://scala-sbt.org]
 
 Recommends
 ---------------
