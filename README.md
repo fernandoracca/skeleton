@@ -2,9 +2,9 @@ Skeleton
 ------------
 
 This project aims to simplify creating a project from scratch.It's simpler than g8 because it doesn't require any additional tools, just clone, build and run.
-It provides:
+It provides a simple way to configure:
 
-     Scala 2.10.1
+     Scala 2.10.2
      SBT 0.12.3
      ScalaTest 2.0M5b2
      IntelliJ IDEA
