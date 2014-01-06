@@ -4,9 +4,9 @@ Skeleton
 This project aims to simplify creating a project from scratch.It's simpler than g8 because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to configure:
 
-     Scala 2.10.2
-     SBT 0.12.3
-     ScalaTest 2.0M5b2
+     Scala 2.10.3
+     SBT 0.13.0
+     ScalaTest 2.0M
      IntelliJ IDEA
      Scala-IDE 3.0
 
@@ -25,7 +25,7 @@ Clone and update the project name from build.sbt
 
 Requires
 ---------------
-* [sbt 0.12.3](https://scala-sbt.org]
+* [sbt 0.13.0](https://scala-sbt.org]
 
 Recommends
 ---------------
