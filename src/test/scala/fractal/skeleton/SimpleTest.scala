@@ -19,4 +19,5 @@ class SimpleTest extends FlatSpec with Matchers {
       emptyStack.pop()
     } 
   }
+
 }
