@@ -37,7 +37,7 @@ IDE
 IDE project Setup
 -----------------
 	> gen-idea
-    	> eclipse
+ 	> eclipse
 
 Test
 ------------------
@@ -96,7 +96,6 @@ Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
 -XX:MaxPermSize=256m
  
 -XX:ReservedCodeCacheSize=128m
-
  
 # Set the extra SBT options
  
@@ -122,6 +121,6 @@ Author
 --------------------
 Fernando Racca
 
-[@quant_leap](http://twitter.com/quant_leap
+[@quant_leap](http://twitter.com/quant_leap)
 
 [http://github.com/fractal/skeleton]
