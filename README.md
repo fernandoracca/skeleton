@@ -121,5 +121,7 @@ However, in this way, any developer who fetches the project will have the same s
 Author
 --------------------
 Fernando Racca
-@quant_leap
-github.com/fractal/skeleton
+
+[@quant_leap](http://twitter.com/quant_leap
+
+[http://github.com/fractal/skeleton]
