@@ -1,7 +1,7 @@
 Skeleton
 ------------
 
-This project aims to simplify creating a project from scratch.It's simpler than g8 because it doesn't require any additional tools, just clone, build and run.
+This project aims to simplify creating a project from scratch.It's simpler than g8 or typesafe activator because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to configure:
 
      Scala 2.10.3
@@ -87,7 +87,7 @@ SBT Launch useful configuration options
 Some of these configuration options are quite important to know when setting up a project behind a company proxy.
 Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
 
-# Set the java args to high
+	# Reserver a decent amount of memory for the SBT JVM  
  
 	-Xms256M
  
@@ -97,7 +97,7 @@ Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
  
 	-XX:ReservedCodeCacheSize=128m
  
-# Set the extra SBT options
+	# Set additional SBT options and HTTP Proxies if needed
  
 	# -Dsbt.ivy.home=<m2 repo>
  
