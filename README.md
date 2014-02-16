@@ -23,7 +23,7 @@ Clone and update the project name from build.sbt
     $ git clone git://github.com/fractal/skeleton my-project
     $ cd my-project
     $ rm -rf .git
-    $ vi build-sbt # change name to my-project, and organization to something that suits you
+    $ vi build.sbt # change name to my-project, and organization to something that suits you
     $ sbt
     > test
 
@@ -89,26 +89,25 @@ Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
 
 # Set the java args to high
  
--Xms256M
+	-Xms256M
  
--Xmx2048M
+	-Xmx2048M
  
--XX:MaxPermSize=256m
+	-XX:MaxPermSize=256m
  
--XX:ReservedCodeCacheSize=128m
+	-XX:ReservedCodeCacheSize=128m
  
 # Set the extra SBT options
  
-# -Dsbt.ivy.home=<m2 repo>
+	# -Dsbt.ivy.home=<m2 repo>
  
--Dsbt.log.format=true
+	-Dsbt.log.format=true
  
-# -Dhttp.proxyHost=<your_proxy_host>
+	# -Dhttp.proxyHost=<your_proxy_host>
  
-# -Dhttp.proxyPort=<your_proxy_port>
+	# -Dhttp.proxyPort=<your_proxy_port>
  
-# -Dhttp.nonProxyHosts="<dont_use_proxy_for_these_addresses>"
-
+	# -Dhttp.nonProxyHosts="<dont_use_proxy_for_these_addresses>"
 
 
 Final Remarks
@@ -123,4 +122,4 @@ Fernando Racca
 
 [@quant_leap](http://twitter.com/quant_leap)
 
-[http://github.com/fractal/skeleton]
+[fractal/skeleton](http://github.com/fractal/skeleton)
