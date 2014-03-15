@@ -14,7 +14,7 @@ It provides a simple way to configure:
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 0.13.1](https://scala-sbt.org)
+* [sbt 0.13.1](http://www.scala-sbt.org)
 
 Use
 ---------------
