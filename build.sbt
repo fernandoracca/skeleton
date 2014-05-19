@@ -1,18 +1,15 @@
-import de.johoop.jacoco4sbt._
-import JacocoPlugin._
- 
 name := "skeleton"
 
 organization := "com.github.fractal"
 
 version := "1.0"
 
-scalaVersion := "2.10.3"
+scalaVersion := "2.10.4"
 
 //Define dependencies. These ones are only required for Test and Integration Test scopes.
 libraryDependencies ++= Seq(
-    "org.scalatest"   %% "scalatest"    % "2.1.0-RC3"   % "test,it",
-    "org.scalacheck"  %% "scalacheck"   % "1.11.2"      % "test,it"
+    "org.scalatest"   %% "scalatest"    % "2.1.5"   % "test,it",
+    "org.scalacheck"  %% "scalacheck"   % "1.11.3"      % "test,it"
 )
 
 // For Settings/Task reference, see http://www.scala-sbt.org/release/sxr/sbt/Keys.scala.html
@@ -23,12 +20,7 @@ scalacOptions ++= List("-feature","-deprecation", "-unchecked", "-Xlint")
 
 // ScalaTest settings.
 // Ignore tests tagged as @Slow (they should be picked only by integration test)
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-l", "org.scalatest.tags.Slow")
-
-//Code Coverage section
-jacoco.settings
-
-//itJacoco.settings
+testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-l", "org.scalatest.tags.Slow", "-u","target/junit-xml-reports", "-oD", "-eS")
 
 //Style Check section 
 org.scalastyle.sbt.ScalastylePlugin.Settings

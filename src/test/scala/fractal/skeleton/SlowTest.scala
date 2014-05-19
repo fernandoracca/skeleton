@@ -7,7 +7,7 @@ import org.scalatest.tags.Slow
 @Slow
 class SlowTest extends FlatSpec with Matchers {
 
-  "A Stack" should "pop values in last-in-first-out order" in {
+  "A Slow Stack" should "pop values in last-in-first-out order" in {
     val stack = new Stack[Int]
 
     stack.push(1)

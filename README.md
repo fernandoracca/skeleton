@@ -6,15 +6,17 @@ It provides a simple way to configure:
 
      Scala 2.10.3
      SBT 0.13.1
-     ScalaTest 2.0
+     ScalaTest 2.1
      ScalaCheck 1.11.2
      IntelliJ IDEA 
      Scala-IDE 3.0+
+     Jenkins (test Reporting)
+     ScalaStyle
 
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 0.13.1](https://scala-sbt.org)
+* [sbt 0.13.2](http://www.scala-sbt.org)
 
 Use
 ---------------
@@ -49,7 +51,13 @@ Be warned, it's addictive. You'll never want to code in any other statically com
 
 Test a single TestSuite
 
-	> testOnly package.subpackage.Class
+	> test-only package.subpackage.Class
+
+Test and Jenkins
+-------------------
+
+ScalaTest is been configured to produce test reports in the JUnit XML format that Jenkins can understand in target/junit-xml-reports.
+Configure Jenkins to use this folder. For many more options to configure, use the [ScalaTest runner documentation|http://www.scalatest.org/user_guide/using_the_runner]
 
 Integration Test
 -------------------
