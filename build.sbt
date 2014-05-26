@@ -4,12 +4,12 @@ organization := "com.github.fractal"
 
 version := "1.0"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.0"
 
 //Define dependencies. These ones are only required for Test and Integration Test scopes.
 libraryDependencies ++= Seq(
-    "org.scalatest"   %% "scalatest"    % "2.1.5"   % "test,it",
-    "org.scalacheck"  %% "scalacheck"   % "1.11.3"      % "test,it"
+    "org.scalatest"   %% "scalatest"    % "2.1.6"   % "test,it",
+    "org.scalacheck"  %% "scalacheck"   % "1.11.4"      % "test,it"
 )
 
 // For Settings/Task reference, see http://www.scala-sbt.org/release/sxr/sbt/Keys.scala.html
