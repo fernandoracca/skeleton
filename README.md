@@ -4,10 +4,10 @@ Skeleton
 This project aims to simplify creating a project from scratch.It's simpler than g8 or typesafe activator because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to configure:
 
-     Scala 2.10.3
-     SBT 0.13.1
-     ScalaTest 2.1
-     ScalaCheck 1.11.2
+     Scala 2.11.0
+     SBT 0.13.2
+     ScalaTest 2.1.6
+     ScalaCheck 1.11.4
      IntelliJ IDEA 
      Scala-IDE 3.0+
      Jenkins (test Reporting)
