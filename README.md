@@ -1,22 +1,23 @@
 Skeleton
 ------------
 
-This project aims to simplify creating a project from scratch.It's simpler than g8 or typesafe activator because it doesn't require any additional tools, just clone, build and run.
-It provides a simple way to configure:
+This project aims to simplify creating a project from scratch, ready to use in your IDE.
+It's arguably simpler than typesafe activator org g8 because it doesn't require any additional tools, just clone, build and run.
+It provides a simple way to have a project running with the following tools configured:
 
-     Scala 2.11.0
-     SBT 0.13.2
-     ScalaTest 2.1.6
-     ScalaCheck 1.11.4
+     Scala 2.11.2
+     SBT 0.13.6
+     ScalaTest 2.2.1
+     ScalaCheck 1.11.5
      IntelliJ IDEA 
      Scala-IDE 3.0+
-     Jenkins (test Reporting)
+     Jenkins (test Reporting and code coverage)
      ScalaStyle
 
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 0.13.2](http://www.scala-sbt.org)
+* [sbt 0.13.6](http://www.scala-sbt.org)
 
 Use
 ---------------
@@ -31,15 +32,16 @@ Clone and update the project name from build.sbt
 
 IDE
 ---------------
-* Install your favourite IDE and plugins.
-	* [Intellij IDEA 13](http://jetbrains.com/download) with Scala and SBT plugins.
-	* [Scala IDE 3](http://scala-ide.org/download/). Install at least the ScalaTest plugin.
-* Read [sbt eclipse](https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse) for more details.
-
-IDE project Setup
------------------
+* Intellij IDEA (13 | 14). Intellij has great support for Scala, and works fast on this setup.
 	> gen-idea
- 	> eclipse
+
+	* [Intellij IDEA 14](http://jetbrains.com/download). Community edition with Scala plugin is enough.
+
+* Scala IDE: Uses Eclipse. Lagging behind Intellij in features, but offers the familiar feel of Eclipse development. 	
+	> eclipse
+	
+	* Read [sbt eclipse](https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse) for more details.
+	* [Scala IDE 3](http://scala-ide.org/download/). Install at least the ScalaTest plugin, Play plugin if you are building a web app using it.
 
 Test
 ------------------
@@ -57,7 +59,7 @@ Test and Jenkins
 -------------------
 
 ScalaTest is been configured to produce test reports in the JUnit XML format that Jenkins can understand in target/junit-xml-reports.
-Configure Jenkins to use this folder. For many more options to configure, use the [ScalaTest runner documentation|http://www.scalatest.org/user_guide/using_the_runner]
+Configure Jenkins to use this folder. For many more options to configure, use the [ScalaTest runner documentation](http://www.scalatest.org/user_guide/using_the_runner)
 
 Integration Test
 -------------------
@@ -73,22 +75,19 @@ The former will run a scala REPL with all the project dependencies available. Th
 
 Code Coverage
 ------------------
-Uses Jacoco via [Jacoco4sbt](https://github.com/sbt/jacoco4sbt/wiki)
+Uses Scoverage as a code coverage tool. The main advantage over other coverage tools is that it understands expressions, as opposed to lines.
 
-	> jacoco:check
+	> scoverage:test
+
+See [Scoverage Plugin](https://github.com/scoverage/sbt-scoverage)
 
 Read documentation details, specially if using integration tests.
 
 Style Checker
 -------------------
-Uses ScalaStyle(http://www.scalastlye.org)
+Uses [ScalaStyle](http://www.scalastlye.org)
 
 	> scalastyle
-
-Source code statistics
----------------------
-
-	> sbt-stats
 
 SBT Launch useful configuration options
 ---------------------------------------
@@ -100,8 +99,6 @@ Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
 	-Xms256M
  
 	-Xmx2048M
- 
-	-XX:MaxPermSize=256m
  
 	-XX:ReservedCodeCacheSize=128m
  
