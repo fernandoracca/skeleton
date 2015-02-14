@@ -6,9 +6,9 @@ It's arguably simpler than typesafe activator org g8 because it doesn't require 
 It provides a simple way to have a project running with the following tools configured:
 
      Scala 2.11.2
-     SBT 0.13.6
-     ScalaTest 2.2.1
-     ScalaCheck 1.11.5
+     SBT 0.13.7
+     ScalaTest 2.2.4
+     ScalaCheck 1.12.2
      IntelliJ IDEA 
      Scala-IDE 3.0+
      Jenkins (test Reporting and code coverage)
@@ -17,7 +17,7 @@ It provides a simple way to have a project running with the following tools conf
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 0.13.6](http://www.scala-sbt.org)
+* [sbt 0.13.7](http://www.scala-sbt.org)
 
 Use
 ---------------
