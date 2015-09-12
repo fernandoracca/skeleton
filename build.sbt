@@ -29,5 +29,3 @@ org.scalastyle.sbt.PluginKeys.config <<= baseDirectory { _ / "src/main/config" /
 
 // Generate Eclipse project with sources for dependencies
 EclipseKeys.withSource := true
-
-instrumentSettings
