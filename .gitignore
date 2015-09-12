@@ -1,7 +1,5 @@
 #SBT
 target
-project/target
-project/project
 
 # Mac
 .DS_Store
