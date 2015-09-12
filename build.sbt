@@ -2,14 +2,14 @@ name := "skeleton"
 
 organization := "com.github.fractal"
 
-version := "1.1"
+version := "1.2"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.7"
 
 //Define dependencies. These ones are only required for Test and Integration Test scopes.
 libraryDependencies ++= Seq(
     "org.scalatest"   %% "scalatest"    % "2.2.4"   % "test,it",
-    "org.scalacheck"  %% "scalacheck"   % "1.12.2"      % "test,it"
+    "org.scalacheck"  %% "scalacheck"   % "1.12.5"      % "test,it"
 )
 
 // For Settings/Task reference, see http://www.scala-sbt.org/release/sxr/sbt/Keys.scala.html
@@ -27,3 +27,5 @@ scalastyleConfig <<= baseDirectory { _ / "src/main/config" / "scalastyle-config.
 
 // Generate Eclipse project with sources for dependencies
 EclipseKeys.withSource := true
+
+coverageEnabled := true
