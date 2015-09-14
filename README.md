@@ -2,13 +2,13 @@ Skeleton
 ------------
 
 This project aims to simplify creating a project from scratch, ready to use in your IDE.
-It's arguably simpler than typesafe activator org g8 because it doesn't require any additional tools, just clone, build and run.
+It's arguably simpler than typesafe activator or g8 because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to have a project running with the following tools configured:
 
-     Scala 2.11.2
-     SBT 0.13.7
+     Scala 2.11.7
+     SBT 0.13.9
      ScalaTest 2.2.4
-     ScalaCheck 1.12.2
+     ScalaCheck 1.12.5
      IntelliJ IDEA 
      Scala-IDE 3.0+
      Jenkins (test Reporting and code coverage)
@@ -17,7 +17,7 @@ It provides a simple way to have a project running with the following tools conf
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 0.13.7](http://www.scala-sbt.org)
+* [sbt 0.13.9](http://www.scala-sbt.org)
 
 Use
 ---------------
@@ -77,7 +77,8 @@ Code Coverage
 ------------------
 Uses Scoverage as a code coverage tool. The main advantage over other coverage tools is that it understands expressions, as opposed to lines.
 
-	> scoverage:test
+	> test
+	> coverageReport
 
 See [Scoverage Plugin](https://github.com/scoverage/sbt-scoverage)
 
