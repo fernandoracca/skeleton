@@ -35,13 +35,13 @@ IDE
 * Intellij IDEA (13 | 14). Intellij has great support for Scala, and works fast on this setup.
 	> gen-idea
 
-	* [Intellij IDEA 14](http://jetbrains.com/download). Community edition with Scala plugin is enough.
+	* [Intellij IDEA 14](http://www.jetbrains.com/idea/download/). Community edition with Scala plugin is enough.
 
 * Scala IDE: Uses Eclipse. Lagging behind Intellij in features, but offers the familiar feel of Eclipse development. 	
 	> eclipse
 	
 	* Read [sbt eclipse](https://github.com/typesafehub/sbteclipse/wiki/Using-sbteclipse) for more details.
-	* [Scala IDE 3](http://scala-ide.org/download/). Install at least the ScalaTest plugin, Play plugin if you are building a web app using it.
+	* [Scala IDE 3](http://scala-ide.org). Install at least the ScalaTest plugin, Play plugin if you are building a web app using it.
 
 Test
 ------------------
@@ -86,7 +86,7 @@ Read documentation details, specially if using integration tests.
 
 Style Checker
 -------------------
-Uses [ScalaStyle](http://www.scalastlye.org)
+Uses [ScalaStyle](http://www.scalastyle.org)
 
 	> scalastyle
 
