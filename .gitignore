@@ -4,14 +4,6 @@ target
 # Mac
 .DS_Store
 
-# Eclipse
-.classpath
-.launch
-.metadata
-.project
-.scala_dependencies
-.settings
-
 # IntelliJ
 .idea
 .idea_modules

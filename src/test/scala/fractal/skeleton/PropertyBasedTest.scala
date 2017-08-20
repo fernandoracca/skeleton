@@ -1,9 +1,8 @@
 package fractal.skeleton
 
 import org.scalatest.PropSpec
-import org.scalatest.prop.{PropertyChecks, Checkers}
+import org.scalatest.prop.PropertyChecks
 import org.scalatest.Matchers
-import org.scalacheck.Prop._
 
 class PropertyBasedTest extends PropSpec with PropertyChecks with Matchers {
 
