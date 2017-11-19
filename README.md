@@ -48,6 +48,13 @@ The former will run a scala REPL with all the project dependencies available. Th
 	> console
 	> run
 
+Multi Project Version:
+-----------------------
+
+Multiple modules and package and deployment.
+
+[fractal/multi-project-skeleton](https://github.com/fractal/multi-project-skeleton)
+
 
 SBT Launch useful configuration options
 ---------------------------------------
@@ -88,3 +95,5 @@ Fernando Racca
 [@quant_leap](http://twitter.com/quant_leap)
 
 [fractal/skeleton](http://github.com/fractal/skeleton)
+
+
