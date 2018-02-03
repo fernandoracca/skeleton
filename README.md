@@ -6,13 +6,13 @@ It's arguably simpler than typesafe activator or g8 because it doesn't require a
 It provides a simple way to have a project running with the following tools configured:
 
      Scala 2.12.4
-     SBT 1.0.3
+     SBT 1.1.0
      ScalaTest 3.0.4
 
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 1.0.3](http://www.scala-sbt.org)
+* [sbt 1.1.0](http://www.scala-sbt.org)
 
 Use
 ---------------
