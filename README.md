@@ -5,9 +5,9 @@ This project aims to simplify creating a project from scratch, ready to use in y
 It's arguably simpler than typesafe activator or g8 because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to have a project running with the following tools configured:
 
-     Scala 2.12.4
-     SBT 1.1.0
-     ScalaTest 3.0.4
+     Scala 2.12.8
+     SBT 1.2.8
+     ScalaTest 3.0.5
 
 Requires
 ---------------
@@ -27,8 +27,8 @@ Clone and update the project name from build.sbt
 
 IDE
 ---------------
-* Intellij IDEA 2017. Intellij has great support for Scala (has been improving since 2013), and works well with this setup.
-	* [Intellij IDEA 2017.2](http://www.jetbrains.com/idea/download/)
+* Intellij IDEA 2018. Intellij has great support for Scala (has been improving since 2013), and works well with this setup.
+	* [Intellij IDEA](http://www.jetbrains.com/idea/download/)
 
 Test
 ------------------
