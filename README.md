@@ -6,13 +6,13 @@ It's arguably simpler than typesafe activator or g8 because it doesn't require a
 It provides a simple way to have a project running with the following tools configured:
 
      Scala 2.12.8
-     SBT 1.2.8
-     ScalaTest 3.0.5
+     SBT 1.3.0
+     ScalaTest 3.0.8
 
 Requires
 ---------------
 * Please download latest version of SBT.
-* [sbt 1.1.0](http://www.scala-sbt.org)
+* [sbt 1.3.0](http://www.scala-sbt.org)
 
 Use
 ---------------
@@ -27,8 +27,11 @@ Clone and update the project name from build.sbt
 
 IDE
 ---------------
-* Intellij IDEA 2018. Intellij has great support for Scala (has been improving since 2013), and works well with this setup.
-	* [Intellij IDEA](http://www.jetbrains.com/idea/download/)
+Great Scala support on: 
+
+  * [Intellij IDEA 2019.2](http://www.jetbrains.com/idea/download/) 
+  * [Visual Studio Code](https://code.visualstudio.com/)
+	Plugin: [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals) 
 
 Test
 ------------------
@@ -64,21 +67,16 @@ Configure then in your ~/.sbt/conf/sbtconfig.txt or sbtopts
 	# Reserver a decent amount of memory for the SBT JVM  
  
 	-Xms256M
- 
 	-Xmx2048M
- 
 	-XX:ReservedCodeCacheSize=128m
  
 	# Set additional SBT options and HTTP Proxies if needed
  
 	# -Dsbt.ivy.home=<m2 repo>
- 
 	-Dsbt.log.format=true
  
 	# -Dhttp.proxyHost=<your_proxy_host>
- 
 	# -Dhttp.proxyPort=<your_proxy_port>
- 
 	# -Dhttp.nonProxyHosts="<dont_use_proxy_for_these_addresses>"
 
 

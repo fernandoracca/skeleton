@@ -1,8 +1,10 @@
 #SBT
 target
+project/target
 
-# Mac
-.DS_Store
+#Metals + Bloop build server
+.metals
+.bloop
 
 # IntelliJ
 .idea
@@ -11,3 +13,6 @@ target
 *.ipr
 *.iws
 .history
+
+# Mac
+.DS_Store
