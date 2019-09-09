@@ -1,16 +1,26 @@
 organization := "com.github.fractal"
 name := "skeleton"
-version := "1.4"
+version := "1.5"
 
-scalaVersion := "2.12.8"
-// Compiler settings. Use scalac -X for other options and their description.
-// See Here for more info http://www.scala-lang.org/files/archive/nightly/docs/manual/html/scalac.html
-scalacOptions ++= List("-feature","-deprecation", "-unchecked", "-Xlint")
-
+scalaVersion := "2.13.0"
 
 libraryDependencies ++= Seq(
-  "org.scalatest"   %% "scalatest"    % "3.0.5"   % "test",
+  "org.scalatest"   %% "scalatest" % "3.0.8"   % "test",
   "org.scalacheck" %% "scalacheck" % "1.14.0" % "test"
 )
 
 // For Settings/Task reference, see http://www.scala-sbt.org/release/sxr/sbt/Keys.scala.html
+// Compiler settings. Use scalac -X for other options and their description.
+scalacOptions ++= List(
+  "-encoding",
+  "utf8",
+  "-explaintypes",
+  "-feature",
+  "-deprecation",
+  "-unchecked",
+  "-Xlint",
+  "-Yrangepos",
+  "-Ywarn-dead-code",
+  "-Ywarn-numeric-widen",
+  "-Ywarn-unused"
+)
