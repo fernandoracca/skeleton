@@ -1,11 +1,13 @@
 package fractal.skeleton
 
-import org.scalatest._
+import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.matchers.must.Matchers
 
-class SimpleAppTest extends FlatSpec with Matchers {
+class SimpleAppTest extends AnyFreeSpec with Matchers {
 
-  "The Answer" should "always be 42" in {
-    Quiz.theAnswer should be (42)
+  "The Answer" - {
+    "is always 42" in {
+      Quiz.theAnswer must be(42)
+    }
   }
-
 }
