@@ -1,14 +1,14 @@
 package fractal.skeleton
 
-import org.scalatest.PropSpec
-import org.scalatest.prop.PropertyChecks
-import org.scalatest.Matchers
+import org.scalacheck.{Gen, Properties}
 
-class PropertyBasedTest extends PropSpec with PropertyChecks with Matchers {
+object PropertyBasedTest extends Properties("SimpleProp") {
+  import org.scalacheck.Prop.forAll
 
-  property("When n is bigger than 1, half n should be more than zero"){
- 	forAll { (n: Int) =>
-  		whenever (n > 1) { n / 2 should be > 0 }
-	}
+  val posInt: Gen[Int] = Gen.posNum[Int].map(x => x + 1)
+
+  property("When n is bigger than 1, half n should be more than zero") = forAll(posInt) { (n: Int) =>
+    n / 2 > 0
   }
+
 }
