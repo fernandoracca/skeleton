@@ -4,6 +4,7 @@ project/target
 
 #Metals + Bloop build server
 .metals
+metals.sbt
 .bloop
 
 # IntelliJ
