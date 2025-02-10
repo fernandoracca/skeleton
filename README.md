@@ -2,11 +2,11 @@ Skeleton
 ------------
 
 This project aims to simplify creating a project from scratch, ready to use in your IDE.
-It's arguably simpler than Typesafe activator or g8 because it doesn't require any additional tools, just clone, build and run.
+It's arguably simpler than g8 or SBT new for older Scala 2.x project because it doesn't require any additional tools, just clone, build and run.
 It provides a simple way to have a project running with the following tools configured:
 
      Scala 2.13 with strict compiler flags
-     SBT 1.3+
+     SBT 1.10+
      ScalaTest 3.2+
      ScalaCheck for Property Based testing
      Scalafmt for automated code formatting
@@ -14,7 +14,7 @@ It provides a simple way to have a project running with the following tools conf
 Requires
 ---------------
 * Please download latest version of SBT. As of last publication of Skeleton:
-* [sbt 1.3.8](http://www.scala-sbt.org)
+* [sbt 1.x](http://www.scala-sbt.org)
 
 Use
 ---------------
@@ -31,7 +31,7 @@ IDE
 ---------------
 Great Scala support on: 
 
-  * [Intellij IDEA 2019.3](http://www.jetbrains.com/idea/download/) 
+  * [Intellij IDEA 2024+](http://www.jetbrains.com/idea/download/) 
   * [Visual Studio Code](https://code.visualstudio.com/)
 	Plugin: [Metals](https://marketplace.visualstudio.com/items?itemName=scalameta.metals) 
 
@@ -101,6 +101,6 @@ Fernando Racca
 
 [@quant_leap](http://twitter.com/quant_leap)
 
-[fractal/skeleton](http://github.com/fractal/skeleton)
+[fernandoracca/skeleton](http://github.com/fernandoracca/skeleton)
 
 

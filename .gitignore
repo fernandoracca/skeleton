@@ -5,6 +5,7 @@ project/target
 #Metals + Bloop build server
 .metals
 .bloop
+.bsp
 
 # IntelliJ
 .idea
