@@ -3,6 +3,7 @@ package fractal.skeleton
 import org.scalacheck.{Gen, Properties}
 
 object PropertyBasedTest extends Properties("SimpleProp") {
+
   import org.scalacheck.Prop.forAll
 
   val posInt: Gen[Int] = Gen.posNum[Int].map(x => x + 1)
